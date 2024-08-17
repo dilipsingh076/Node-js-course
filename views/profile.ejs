@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Profile ejs page</title>
+
+</head>
+<body>
+    <%- include('common/header') %>
+    <h1>Profile page</h1>
+    <h2>Welcome  <%= user.name %> </h2>
+    <h3>your city is  <%= user.city %> </h3>
+    <ul>
+        <% user.skills.forEach((el)=>{  %>
+            <li> <%= el %> </li>
+        <%})%>
+    </ul>
+    
+</body>
+</html>
